@@ -1,7 +1,7 @@
 import { Container } from 'react-bootstrap';
+import { Outlet } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import HomeScreen from './screens/HomeScreen';
 
 const App = () => {
   return (
@@ -9,7 +9,8 @@ const App = () => {
         <Header />
         <main className='py-3'> {/* Padding y axis */}
             <Container>
-                <HomeScreen />
+                <Outlet />
+                 {/* supposed to have homescreen here but removed for routing purposes */}
             </Container>
         </main>
         <Footer />
