@@ -1,8 +1,19 @@
-import React from 'react'
+import { Container } from 'react-bootstrap';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import HomeScreen from './screens/HomeScreen';
 
 const App = () => {
   return (
-    <h1>Welcome to Proshhop</h1>
+    <> {/* Fragment */}
+        <Header />
+        <main className='py-3'> {/* Padding y axis */}
+            <Container>
+                <HomeScreen />
+            </Container>
+        </main>
+        <Footer />
+    </>
   )
 }
 
