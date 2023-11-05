@@ -1,0 +1,19 @@
+{
+  "name": "proshop-v4",
+  "version": "1.0.0",
+  "description": "eCommerce application built using the MERN stack",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/gideeeh/proshop-demo"
+  },
+  "author": "Pekkorina",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
