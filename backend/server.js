@@ -1,6 +1,8 @@
 import express from 'express';
+import dotenv from 'dotenv';
+dotenv.config();
 import products from './data/products.js'
-const port = 5000;
+const port = process.env.PORT || 5000; /* Prefix process before env then call env variable to call var from .env */
 
 const app = express();
 
